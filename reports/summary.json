@@ -1,0 +1,91 @@
+{
+  "dataset": "AI4I 2020 Predictive Maintenance Dataset",
+  "synthetic": true,
+  "rows": 10000,
+  "target": "Machine failure",
+  "feature_count": 6,
+  "features": [
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]"
+  ],
+  "source_ids_used_as_features": false,
+  "component_failure_labels_used_as_features": false,
+  "component_label_mismatch_count": 27,
+  "evaluations": {
+    "source_order": "Source-order holdout",
+    "shuffled": "Stratified shuffled holdout"
+  },
+  "metrics": [
+    {
+      "evaluation": "source_order",
+      "model": "prior",
+      "n_test": 3000,
+      "failure_count": 61,
+      "average_precision": 0.02033333333333333,
+      "roc_auc": 0.5,
+      "brier_score": 0.020295510204081633,
+      "failure_rate": 0.02033333333333333
+    },
+    {
+      "evaluation": "source_order",
+      "model": "logistic",
+      "n_test": 3000,
+      "failure_count": 61,
+      "average_precision": 0.41549503428864715,
+      "roc_auc": 0.89171068557946,
+      "brier_score": 0.01579610133260618,
+      "failure_rate": 0.02033333333333333
+    },
+    {
+      "evaluation": "source_order",
+      "model": "random_forest",
+      "n_test": 3000,
+      "failure_count": 61,
+      "average_precision": 0.6971108265434146,
+      "roc_auc": 0.9756273740928944,
+      "brier_score": 0.01020655286543489,
+      "failure_rate": 0.02033333333333333
+    },
+    {
+      "evaluation": "shuffled",
+      "model": "prior",
+      "n_test": 3000,
+      "failure_count": 102,
+      "average_precision": 0.034,
+      "roc_auc": 0.5,
+      "brier_score": 0.03284402040816326,
+      "failure_rate": 0.034
+    },
+    {
+      "evaluation": "shuffled",
+      "model": "logistic",
+      "n_test": 3000,
+      "failure_count": 102,
+      "average_precision": 0.39890963347408664,
+      "roc_auc": 0.8901575122802744,
+      "brier_score": 0.025440085962627996,
+      "failure_rate": 0.034
+    },
+    {
+      "evaluation": "shuffled",
+      "model": "random_forest",
+      "n_test": 3000,
+      "failure_count": 102,
+      "average_precision": 0.8421743775715961,
+      "roc_auc": 0.9837650035859755,
+      "brier_score": 0.012401134487032428,
+      "failure_rate": 0.034
+    }
+  ],
+  "capacity_fractions": [
+    0.01,
+    0.02,
+    0.05,
+    0.1
+  ],
+  "row_level_scores_published": false
+}

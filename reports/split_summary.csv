@@ -1,0 +1,5 @@
+evaluation,split,n,failure_count,failure_rate
+source_order,train,7000,278,0.03971429
+source_order,test,3000,61,0.02033333
+shuffled,train,7000,237,0.03385714
+shuffled,test,3000,102,0.03400000

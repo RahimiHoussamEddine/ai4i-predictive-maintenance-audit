@@ -1,0 +1,17 @@
+evaluation,feature,measure,train_value,test_value,difference
+source_order,Air temperature [K],standardized_mean_difference,300.41497143,299.04816667,-0.64104600
+source_order,Process temperature [K],standardized_mean_difference,310.02450000,309.96136667,-0.04014733
+source_order,Rotational speed [rpm],standardized_mean_difference,1540.58314286,1534.55966667,-0.03287354
+source_order,Torque [Nm],standardized_mean_difference,39.92557143,40.13003333,0.02037662
+source_order,Tool wear [min],standardized_mean_difference,108.59228571,106.45466667,-0.03349484
+source_order,Type=H,share_difference,0.09857143,0.10433333,0.00576190
+source_order,Type=L,share_difference,0.60042857,0.59900000,-0.00142857
+source_order,Type=M,share_difference,0.30100000,0.29666667,-0.00433333
+shuffled,Air temperature [K],standardized_mean_difference,300.00720000,299.99963333,-0.00376340
+shuffled,Process temperature [K],standardized_mean_difference,310.00908571,309.99733333,-0.00788056
+shuffled,Rotational speed [rpm],standardized_mean_difference,1537.59571429,1541.53033333,0.02235338
+shuffled,Torque [Nm],standardized_mean_difference,40.02071429,39.90803333,-0.01138138
+shuffled,Tool wear [min],standardized_mean_difference,108.10085714,107.60133333,-0.00783703
+shuffled,Type=H,share_difference,0.10014286,0.10066667,0.00052381
+shuffled,Type=L,share_difference,0.60257143,0.59400000,-0.00857143
+shuffled,Type=M,share_difference,0.29728571,0.30533333,0.00804762

@@ -1,0 +1,34 @@
+{
+  "source": {
+    "url": "https://archive.ics.uci.edu/static/public/601/ai4i%2B2020%2Bpredictive%2Bmaintenance%2Bdataset.zip",
+    "archive": "ai4i2020.zip",
+    "member": "ai4i2020.csv",
+    "bytes": 522170,
+    "sha256": "f601f14294bcf190f9d720676b7f0aea46a26cde9ab8ebc7b4f8174d9d26b252",
+    "doi": "10.24432/C5HS5C",
+    "license": "CC BY 4.0"
+  },
+  "synthetic_benchmark": true,
+  "rows": 10000,
+  "feature_count": 6,
+  "missing_cells": 0,
+  "duplicate_udi": 0,
+  "duplicate_product_id": 0,
+  "duplicate_feature_rows": 0,
+  "machine_failure_count": 339,
+  "machine_failure_rate": 0.0339,
+  "component_failure_counts": {
+    "TWF": 46,
+    "HDF": 115,
+    "PWF": 95,
+    "OSF": 98,
+    "RNF": 19
+  },
+  "component_label_mismatch_count": 27,
+  "component_labels_reconstruct_machine_failure": false,
+  "modeling": {
+    "source_ids_used_as_features": false,
+    "component_failure_labels_used_as_features": false,
+    "row_level_scores_published": false
+  }
+}
