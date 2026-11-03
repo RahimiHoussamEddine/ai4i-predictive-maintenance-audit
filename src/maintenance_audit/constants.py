@@ -1,8 +1,10 @@
 """Pinned source details and modeling contract."""
 
+import os
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
+_DEFAULT_ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(os.environ.get("MAINTENANCE_AUDIT_ROOT", str(_DEFAULT_ROOT))).resolve()
 RAW_DIR = ROOT / "data" / "raw"
 REPORTS_DIR = ROOT / "reports"
 SOURCE_URL = (
